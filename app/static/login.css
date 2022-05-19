@@ -56,3 +56,18 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-color: black;
     }
+
+    content-section {
+        padding: 10px 20px;
+        border: 1px solid #DDDDDD;
+        margin-bottom: 20px;
+        width: 40%;
+        /* border-radius: 22px;
+    background: #E0E0E0;
+    box-shadow:  50px 50px 100px ,
+                 -50px -50px 100px; */
+        border-radius: 10px;
+    background: #E0E0E0;
+    box-shadow:  5px 5px 50px ,
+                 -5px -5px 50px;
+      }
