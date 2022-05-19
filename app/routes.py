@@ -1,5 +1,6 @@
 from app import app
 from flask import render_template 
+from .forms import productForm
 
 
 # julie route
@@ -27,7 +28,8 @@ def reg():
 
 @app.route('/products')
 def products():
-    return render_template('products.html')
+    form=productForm()
+    return render_template('products.html', form=form)
 
 # oscar route
 
