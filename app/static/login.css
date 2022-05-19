@@ -1,0 +1,58 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: black;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-color: black;
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: black;
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+#form-one{
+    background-color: black;
+}
+#loginbtn{
+    position: relative;
+    left: 0%;
+}
+#information-info{
+    color: orange;
+    font-size: 20px;
+}
+#information-header{
+    color: orange;
+    font-size: 30px;
+}
+
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background-color: black;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-color: black;
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: black;
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background-color: black;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-color: black;
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: black;
+    }
