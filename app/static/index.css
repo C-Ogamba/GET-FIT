@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    position: relative;
+}
+
+
+h3{
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    font-size: 66px;
+    font-weight: 900;
+    margin-left: 20px;
+    background: conic-gradient(
+        #FB8500 12%, #ffff 45%,#FB8500 67%,
+        #FB8500 67%, #FB8500 67% , #ffff 20%,
+
+       
+        
+
+
+    );
+  
+   
+}
+
+img{
+    position: relative;
+    left: 40%;
+   
+}
+
+p{
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 20px;
+
+
+}
+
+nav{
+    background-color: black;
+    
+}
+
+nav a{
+    color: white !important;
+    margin-left: 50px;
+
+}
+section a{
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    background-color: #FB8500;
+    padding: 10px;
+    margin-left: 20px;
+    color: white;
+
+}
