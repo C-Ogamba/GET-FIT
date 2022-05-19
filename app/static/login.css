@@ -38,7 +38,7 @@
 
 .gradient-custom-3 {
     /* fallback for old browsers */
-    background-color: black;
+    background: black;
     
     /* Chrome 10-25, Safari 5.1-6 */
     background-color: black;
@@ -48,7 +48,7 @@
     }
     .gradient-custom-4 {
     /* fallback for old browsers */
-    background-color: black;
+    background: black;
     
     /* Chrome 10-25, Safari 5.1-6 */
     background-color: black;
