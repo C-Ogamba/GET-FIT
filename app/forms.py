@@ -31,9 +31,9 @@ class Login(FlaskForm):
     submit = SubmitField('Login')
 
 class productForm(FlaskForm):
-    classes = SelectField("Pick the class pick", choices=[("1", "Sportdances"), ( "2", "Bodybuilding")],validators=[DataRequired()] )
-    trainer = SelectField("Pick your preffered trainer", choices=[("trainer 1", "Shivsimani"), ( "trainner 2", "Chikikiruka,")],validators=[DataRequired()])
-    package= SelectField('Select package',choices=[("package 1","Basic"), ("package 2","Unlimited")],validators=[DataRequired()])
+    classes = SelectField("Pick the class pick", choices=[( 1,  "Sportdances"), ( 2, "Bodybuilding")],validators=[DataRequired()] )
+    trainer = SelectField("Pick your preffered trainer", choices=[(1, "Shivsimani"), ( 2, "Chikikiruka,")],validators=[DataRequired()])
+    package= SelectField('Select package',choices=[(200,"Basic"), (300,"Unlimited")],validators=[DataRequired()])
     submit = SubmitField('Submit')
 
 
