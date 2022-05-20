@@ -1,7 +1,7 @@
 from app.forms import RegisterForm,Login
 import email
 from app import app, db
-from flask import redirect, render_template, request, url_for, flash
+from flask import redirect, render_template, request, request_finished, url_for, flash
 from .forms import productForm
 from app.models import User
 from flask_login import current_user
@@ -71,16 +71,27 @@ def trial():
 
 # mary and mercy route
 
-@app.route('/products')
+@app.route('/products', methods=['POST', 'GET'])
 def products():
+
     form=productForm()
+    if request.method=='POST':
+        classes=form.classes.data
+        package=form.package.data
+        trainer=form.trainer.data
+        db.session.add(classes)
+        db.session.add(package)
+        db.session.add(trainer)
+        db.session.commit()
+        return redirect(url_for('user'))
     return render_template('products.html', form=form)
 
 # oscar route
 
-@app.route('/user')
-def user():
-    return render_template('user.html')
+@app.route('/user/<username>')
+def user(username):
+    user=User.query.filter_by(username=username).first_or_404()
+    return render_template('user.html', user=user)
 
 
 
