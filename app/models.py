@@ -11,7 +11,7 @@ class User(db.Model):
     email = db.Column(db.String(120), index=True, unique=True)
     password = db.Column(db.String(128))
     # img_file=db.Column(db.String(130))
-    
+    details=db.relationship("User_details",backref='items', lazy='dynamic')
    
     def set_password(self, password):
             self.password = generate_password_hash(password)
@@ -30,7 +30,8 @@ class User_details(db.Model):
     classes=db.Column(db.String())
     package=db.Column(db.String())
     trainer=db.Column(db.String())
+    user_id=db.Column(db.Integer, db.ForeignKey('user.id'))
 
 
     def __repr__(self):
-        return '<User {}>'.format(self.classes)
+        return '<User_details {}>'.format(self.classes)
