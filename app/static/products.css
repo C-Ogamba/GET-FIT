@@ -97,3 +97,27 @@
     color: white;
     margin: 5px;
 }
+
+body{
+    background-color: rgb(50, 49, 49);
+}
+
+.content-section{
+    color: white;
+    width: 50%;
+    display: flex;
+    margin: 10%;
+    box-sizing: 20%;
+    justify-content: center;
+    left: 30%;
+    border-radius: 3px;
+    height: 80vh;
+    background-color: #262424;
+}
+.book{
+    text-align: center;
+    color: orange;
+}
+hr{
+    border: 1px solid orange;
+}
