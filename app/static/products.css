@@ -49,11 +49,11 @@
     height: 100vh;
     background-color: black;
 }
-.hero{
+#uno{
     color: whitesmoke;
     position: absolute;
     bottom: 20%;
-    font-size: 66px;
+    font-size: 30px;
     font-weight: 900;
     margin-left: 20px;
 }
@@ -80,4 +80,20 @@
 .title1{
     text-align: center;
     color: #ffff;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: orange;
+  color: black;
+  text-align: center;
+  height: 7vh;
+}
+.content-section{
+    text-align: center;
+}
+.tres{
+    color: white;
+    margin: 5px;
 }
